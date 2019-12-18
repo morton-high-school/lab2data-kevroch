@@ -1,15 +1,9 @@
 import java.util.*;
+import java.io.*;
 
-public class Cereal{
-
-  private String name;
-  private double rating;
-  private int shelf;
-
-  public Cereal (String name, double rating, int shelf){
-    shelf = this.shelf;
-    name = this.name;
-    rating = this.rating;
-  }
-
+public class cereal{
+    public static void main(String[] args){
+      cerealInfo t = new cerealInfo();
+      System.out.println(t.Column());
+    }
 }
