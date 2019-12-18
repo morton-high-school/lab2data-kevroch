@@ -24,21 +24,16 @@ public class cerealInfo{
     }
       return column;
     }
-    public String shelfName(){
-      String temp = " ";
+    public void shelfName(){
       try{
         Scanner nameScan = new Scanner(new FileReader(csvFile));
+        nameScan.nextLine();
         while(nameScan.hasNextLine()){
           String temp[] = nameScan.nextLine().split(",");
-
-        }catch(Exception e){
+          System.out.println(temp[0]);
+        }
+      }catch(Exception e){
           System.out.println(e);
         }
-
-      }
-
       }
     }
-
-
-  }
