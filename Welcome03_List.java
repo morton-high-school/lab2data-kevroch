@@ -14,10 +14,10 @@ public class Welcome03_List {
              "station/latitude", "station/longitude");
       System.out.println("Total stations: " + allstns.size());
 
-      double lat;
-      for (int i = 0; i < allstns.size(); i++){
-        if (allstns[i-1].latitude < allstns[i].latitude){
-          lat = attstns[i-1].latitude;
+      for (WeatherStation ws : allstns) {
+        if (ws.getLatitude() < 0){
+          System.out.println(ws.getName());
+          System.out.println(ws.getLatitude());
         }
       }
 
