@@ -18,14 +18,14 @@ public class cereal{
       double thirdAverage = 0;
 
 
-      ArrayList<Cereal> b = new ArrayList<Cereal>();
+      ArrayList<cereal> b = new ArrayList<cereal>();
 
 
       while (x.hasNextLine()){
         y = x.nextLine().split(",");
 
-        Cereal bb = new Cereal(y[0], Integer.parseInt(y[11]), Double.parseDouble(y[14]), y[1], Integer.parseInt(y[2]), Integer.parseInt(y[3]));
-        b.add(lol);
+        Cereal bb = new Cereal(Integer.parseInt(y[11]), Double.parseDouble(y[14]));
+        b.add(bb);
         a++;
       }
 
@@ -53,7 +53,11 @@ public class cereal{
 
     }
 
-    public Cereal(String s, double r){
+    private int shelf;
+    private double rating;
+
+
+    public void Cereal(int s, double r){
       shelf = s;
       rating = r;
     }
